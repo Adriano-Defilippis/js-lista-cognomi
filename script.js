@@ -45,6 +45,8 @@ listaHtml = document.getElementById('lista');
 
 // Stampo la nuova lista aggiornata
 while (contatore < lengthArray) {
+
+  //prova per controllo e stampa dell'indice dell'elemento inserito da prompt()
   if(cognomi[contatore] == nuovoCognome) {
     console.log([contatore] + ' ' + cognomi[contatore]);
   }
