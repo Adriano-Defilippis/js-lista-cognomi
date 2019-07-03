@@ -18,7 +18,7 @@ var cognomi = [
   "Dybala"
 ];
 
-var nuovoCognome, contatore, lengthArray, listaHtml;
+var nuovoCognome, contatore, lengthArray, listaHtml, contenutoTemp;
 
 // Chiedo un nuovo Cognome all'utente
 nuovoCognome = prompt('inserisci il prossimo acquisto magico della Juventus f.c');
@@ -47,6 +47,8 @@ listaHtml = document.getElementById('lista');
 // Stampo in console la nuova lista aggiornata
 while (contatore < lengthArray) {
 
-  console.log([contatore] + " " + cognomi[contatore]);
+  contenutoTemp = listaHtml.innerHTML;
+
+  listaHtml.innerHTML = contenutoTemp + "<li>" + cognomi[contatore] + "</li>";
   contatore++;
 }
