@@ -18,4 +18,10 @@ var cognomi = [
   "Dybala"
 ];
 
-console.log(cognomi[9]);
+var nuovoCognome;
+
+// console.log(cognomi[9]);
+
+// Chiedo un nuovo Cognome all'utente
+nuovoCognome = prompt('inserisci il prossimo acquisto magico della Juventus f.c');
+console.log(nuovoCognome);
