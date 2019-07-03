@@ -6,19 +6,19 @@
 // Valorizzo un Array con Gia dei Cognomi
 var cognomi = [
   "Buffon",
-  "Barzagli",
+  "barzagli",
   "Chiellini",
   "Bonucci",
   "Alex sandro",
-  "Pjanic",
+  "pjanic",
   "Matuidi",
-  "Bernardeschi",
+  "bernardeschi",
   "Mandzuckic",
   "Ronaldo",
   "Dybala"
 ];
 
-var nuovoCognome, contatore, lengthArray, listaHtml, listaOrdinata;
+var nuovoCognome, contatore, lengthArray, listaHtml;
 
 // Chiedo un nuovo Cognome all'utente
 nuovoCognome = prompt('inserisci il prossimo acquisto magico della Juventus f.c');
@@ -30,6 +30,11 @@ cognomi.push(nuovoCognome);
 // Stampo lunghezza Array dei Cognomi
 lengthArray = cognomi.length;
 console.log("Lunghezza dell'Array: " + lengthArray);
+
+// Creo un Ciclo per trasformare tutti gli elementi dell'Array in maiuscolo per evitare problemi nella messa in ordine Alfabetico
+for (var i = 0; i < lengthArray; i++){
+  cognomi[i] = cognomi[i].toUpperCase();
+}
 
 // Metto in oridine Alfabetico il mio Array;
 cognomi.sort();
