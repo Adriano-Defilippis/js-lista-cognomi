@@ -45,7 +45,9 @@ listaHtml = document.getElementById('lista');
 
 // Stampo la nuova lista aggiornata
 while (contatore < lengthArray) {
-
+  if(cognomi[contatore] == nuovoCognome) {
+    console.log([contatore] + ' ' + cognomi[contatore]);
+  }
   contenutoTemp = listaHtml.innerHTML;
 
   listaHtml.innerHTML = contenutoTemp + "<li>" + cognomi[contatore] + "</li>";
@@ -54,12 +56,12 @@ while (contatore < lengthArray) {
 
 
 // Controllo per stampare l'indice dell'elemento input all'interno della lista
-for(var i = 0; i < cognomi.length; i++) {
-   if(cognomi[contatore] === nuovoCognome) {
-     console.log(i);
-   }
-}
-console.log(i);
+// for(var i = 0; i < cognomi.length; i++) {
+//    if(cognomi[contatore] === nuovoCognome) {
+//      console.log(i);
+//    }
+// }
+// console.log(i);
 
 // var index = nuovoCognome.findIndex();
 //
