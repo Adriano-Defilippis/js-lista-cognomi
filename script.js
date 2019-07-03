@@ -38,13 +38,12 @@ for (var i = 0; i < lengthArray; i++){
 
 // Metto in oridine Alfabetico il mio Array;
 cognomi.sort();
-console.log(cognomi.sort());
 
 //Chiudo il contatore in una variabile
 contatore = 0;
 listaHtml = document.getElementById('lista');
 
-// Stampo in console la nuova lista aggiornata
+// Stampo la nuova lista aggiornata
 while (contatore < lengthArray) {
 
   contenutoTemp = listaHtml.innerHTML;
@@ -52,3 +51,16 @@ while (contatore < lengthArray) {
   listaHtml.innerHTML = contenutoTemp + "<li>" + cognomi[contatore] + "</li>";
   contatore++;
 }
+
+
+// Controllo per stampare l'indice dell'elemento input all'interno della lista
+for(var i = 0; i < cognomi.length; i++) {
+   if(cognomi[contatore] === nuovoCognome) {
+     console.log(i);
+   }
+}
+console.log(i);
+
+// var index = nuovoCognome.findIndex();
+//
+// console.log(index);
