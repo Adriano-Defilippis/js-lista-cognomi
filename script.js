@@ -24,4 +24,8 @@ var nuovoCognome;
 
 // Chiedo un nuovo Cognome all'utente
 nuovoCognome = prompt('inserisci il prossimo acquisto magico della Juventus f.c');
-console.log(nuovoCognome);
+console.log('Dato inserito da utente: ' + nuovoCognome);
+
+//Inserisco input nell'Array
+cognomi.push(nuovoCognome);
+console.log(cognomi);
