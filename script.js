@@ -22,6 +22,7 @@ var nuovoCognome, contatore, lengthArray, listaHtml, contenutoTemp;
 
 // Chiedo un nuovo Cognome all'utente
 nuovoCognome = prompt('inserisci il prossimo acquisto magico della Juventus f.c');
+nuovoCognome = nuovoCognome.toUpperCase();
 console.log('Dato inserito da utente: ' + nuovoCognome);
 
 //Inserisco input nell'Array
@@ -46,8 +47,6 @@ listaHtml = document.getElementById('lista');
 // Stampo la nuova lista aggiornata
 while (contatore < lengthArray) {
 
-  
-
   contenutoTemp = listaHtml.innerHTML;
 
   listaHtml.innerHTML = contenutoTemp + "<li>" + cognomi[contatore] + "</li>";
@@ -56,12 +55,12 @@ while (contatore < lengthArray) {
 
 
 // Controllo per stampare l'indice dell'elemento input all'interno della lista
-// for(var i = 0; i < cognomi.length; i++) {
-//    if(cognomi[contatore] === nuovoCognome) {
-//      console.log(i);
-//    }
-// }
-// console.log(i);
+for(var i = 0; i < cognomi.length; i++) {
+   if(cognomi[i] === nuovoCognome) {
+     console.log("Indice trovato " + i);
+   }
+}
+console.log(i);
 
 // var index = nuovoCognome.findIndex();
 //
